@@ -4,7 +4,8 @@
   "description": "Use NodeJS+Express to serve Unity WebGL build",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/insthync/nodejs-serve-unity-webgl/issues"
   },
-  "homepage": "https://github.com/insthync/nodejs-serve-unity-webgl#readme"
+  "homepage": "https://github.com/insthync/nodejs-serve-unity-webgl#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
 }
