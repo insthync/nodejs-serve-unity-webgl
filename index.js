@@ -22,6 +22,13 @@ app.use(express.static('public', {
             res.set("Content-Type", "application/wasm");
             res.set("Content-Encoding", "gzip");
         }
+        if (path.endsWith(".data.br") || path.endsWith(".framework.js.br")) {
+            res.set("Content-Encoding", "br");
+        }
+        if (path.endsWith(".wasm.br")) {
+            res.set("Content-Type", "application/wasm");
+            res.set("Content-Encoding", "br");
+        }
     }
 }));
 
